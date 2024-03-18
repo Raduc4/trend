@@ -1,0 +1,61 @@
+body * {
+	font-family: 'Montserrat', sans-serif;
+}
+.font-normal {font-weight: 400}
+.font-medium {font-weight: 500}
+.font-bold {font-weight: 700}
+.font-extrabold {font-weight: 800}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Navigation*/
+@media (max-width: 1024px) {
+  #navigation {
+    pointer-events: none;
+    display: none;
+  }
+  #navigation:target {
+    pointer-events: all;
+    display: flex;
+  }
+}
+.mirror {
+	-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+}
+
+/*Modal*/
+.modal {
+    pointer-events: none;
+    display: none;
+}
+.modal:target {
+    pointer-events: all;
+    display: block;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/*Color*/
+.bg-custom-1 { background-color: #622F73 }
+.text-custom-1 { color: #622F73 }
+.border-custom-1 { border-color: #622F73 }
